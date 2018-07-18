@@ -32,7 +32,7 @@ if(!class_exists('JoombaDatabase')){
 		 * @uses the constants defined in config.php
 		 */	
 		function connect() {
-			$link = mysql_connect('localhost', DB_USER, DB_PASS);
+			$link = mysql_connect('tcp:jasamerin-sv.database.windows.net,1433', DB_USER, DB_PASS);
 
 			if (!$link) {
 				die('Could not connect: ' . mysql_error());
