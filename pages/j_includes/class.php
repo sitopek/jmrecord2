@@ -1,6 +1,6 @@
 <?php
 // Our main class
-if(!class_exists('Joomba')){
+if(!class_exists('jasamerin-db')){
 	class Joomba {
 		
 		function register($redirect) {
@@ -93,7 +93,7 @@ if(!class_exists('Joomba')){
 			 * process the form data.
 			 */
 			if ( !empty ( $_POST ) ) {
-$link = mysqli_connect("localhost", "root", "", "joombo");
+$link = mysqli_connect("tcp:jasamerin-sv.database.windows.net,1433", "shairol@jasamerin-sv", "Jasamerin1", "jasamerin-db");
     // Check connection
 
     if($link === false){
